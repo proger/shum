@@ -14,8 +14,8 @@ $(document.body).on('vulyk.next', (e, data) => {
 
     wavesurfer.load(wav.replace(/^\./, ''));
     document.getElementById('text').innerText = transcript;
-    document.forms.shum.utt_id = utt_id;
-    document.forms.shum.transcript = transcript;
+    document.forms.shum.utt_id.value = utt_id;
+    document.forms.shum.transcript.value = transcript;
 })
 
 $(document.body).on('vulyk.save', (e, callback) => {
