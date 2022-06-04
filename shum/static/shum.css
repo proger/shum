@@ -1,51 +1,30 @@
 article {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 }
 
-summary {
-    padding-bottom: 10px;
+
+
+.btn:hover {
+    color: #ddd !important;
 }
 
-utterance-text {
-    font-size: large;
+.btn-insertion.active {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    color: #ddd;
 }
 
-audio {
-    width: 100%;
-    max-width: 640px;
+/* inactive: word is incorrect */
+.btn-correct:not(.active) {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    color: #ddd;
 }
 
-.button {
-    float: left;
-    margin: 0 5px 0 0;
-    width: 120px;
-    height: 40px;
-    position: relative;
+/* active: word is correct, use default styles */
+.btn-correct.active {
 }
 
-.button label,
-.button input {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-.button input[type="radio"] {
-    opacity: 0.011;
-    z-index: 100;
-}
-
-.button input[type="radio"]:checked + label {
-    background: #1eb4e9;
-    border-radius: 4px;
-}
-
-.button label {
-    cursor: pointer;
-    z-index: 90;
-    line-height: 1.8em;
+.hypothesis .btn {
+    font-size: larger;
 }

@@ -1,6 +1,6 @@
-<article>
-    <button id="play" class="btn btn-primary">Грати / зупинити</button>
+<h4>Натисніть на слова з помилками або на точки в місцях, де слів або звуків не вистачає</h4>
 
+<article>
     <section>
         <div id="waveform">
         </div>
@@ -8,23 +8,13 @@
     </section>
 
     <section>
-        <utterance-text id="text">
-        </utterance-text>
+        <form name="shum" id="uv">
+            <input type="hidden" name="utt_id" />
+            <input type="hidden" name="hypothesis" />
+            <div class="hypothesis" id="hypothesis">
+            </div>
+        </form>
     </section>
 </article>
 
-<summary>
-    <h3>Ваш вердикт:</h3>
-    <form name="shum" id="uv">
-        <input type="hidden" name="utt_id" />
-        <input type="hidden" name="transcript" />
-        <div class="button">
-            <input type="radio" name="decision" value="correct" id="decision-correct" />
-            <label class="btn btn-success" for="decision-correct">Збігається</label>
-        </div>
-        <div class="button">
-            <input type="radio" name="decision" value="error" id="decision-error" />
-            <label class="btn btn-warning" for="decision-error" id="decision-error">Є помилки</label>
-        </div>
-    </form>
-</summary>
+<button id="play" class="btn btn-primary">Слухати</button>
