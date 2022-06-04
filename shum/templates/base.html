@@ -1,0 +1,30 @@
+<article>
+    <button id="play" class="btn btn-primary">Грати / зупинити</button>
+
+    <section>
+        <div id="waveform">
+        </div>
+        <div id="spectrogram"></div>
+    </section>
+
+    <section>
+        <utterance-text id="text">
+        </utterance-text>
+    </section>
+</article>
+
+<summary>
+    <h3>Ваш вердикт:</h3>
+    <form name="shum" id="uv">
+        <input type="hidden" name="utt_id" />
+        <input type="hidden" name="transcript" />
+        <div class="button">
+            <input type="radio" name="decision" value="correct" id="decision-correct" />
+            <label class="btn btn-success" for="decision-correct">Збігається</label>
+        </div>
+        <div class="button">
+            <input type="radio" name="decision" value="error" id="decision-error" />
+            <label class="btn btn-warning" for="decision-error" id="decision-error">Є помилки</label>
+        </div>
+    </form>
+</summary>

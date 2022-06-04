@@ -1,0 +1,5 @@
+__pycache__/
+artifacts/
+wandb/
+*.egg-info/
+local_settings.py
