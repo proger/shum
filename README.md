@@ -36,7 +36,7 @@ Initialize MongoDB and start the web app:
 
 ```
 python3 -m shum init utterance_verification_task
-python3 -m shum.table > utterances.json
+python3 -m shum.table wandb/artifact/here:v1 > utterances.json
 python3 -m shum db load utterance_verification_task utterances.json
 python3 -m shum run
 ```
